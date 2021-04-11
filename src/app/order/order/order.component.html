@@ -1,0 +1,22 @@
+ 
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        ORDER
+      </ion-title>
+      <ion-buttons slot="start">
+        <ion-menu-button auto-hide="false" (click)="openMenu()"></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+    <ion-toolbar>
+      <ion-segment (ionChange)="onSegmentChanged($event)" value="order-list">
+        <ion-segment-button value="order-list">
+          <ion-label>Order List</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="add-order">
+          <ion-label>Add Order</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+  </ion-header>
+  <router-outlet></router-outlet>

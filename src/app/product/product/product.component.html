@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>PRODUCT</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+   </ion-buttons>
+  </ion-toolbar>
+   <ion-toolbar>
+    <ion-segment value="product-list" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="product-list">
+        <ion-label>Product List</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="add-product">
+        <ion-label>Add Product</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+   </ion-toolbar>
+</ion-header>
+<router-outlet></router-outlet>

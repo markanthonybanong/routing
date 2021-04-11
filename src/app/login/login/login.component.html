@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Log in</ion-title>
+  </ion-toolbar>
+</ion-header>
+<form [formGroup]="myForm">
+  <ion-item>
+    <ion-label>username</ion-label>
+    <ion-input type="text" formControlName="username"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>password</ion-label>
+    <ion-input type="text" formControlName="password"></ion-input>
+  </ion-item>
+  <ion-button
+  expand="block"
+  (click)="onSignUp()"
+  >Submit</ion-button> 
+</form>
