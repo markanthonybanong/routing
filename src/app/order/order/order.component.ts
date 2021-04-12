@@ -14,7 +14,9 @@ export class OrderComponent implements OnInit {
     private menu: MenuController
   ) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    document.querySelector('.order-container').parentElement.style.width = "100%";
+  }
   onSegmentChanged(segment: any): void {
     if (segment.detail.value === 'order-list') {
        this.router.navigate(['order/order-list']);
